@@ -1,0 +1,233 @@
+<!--Lembra de sempre ir fazendo o mobile -->
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Portfolio | Arthur</title>
+
+    <!--Exportações-->
+    <link rel="icon" href="./img/icone.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+
+    <!--Css-->
+    <link rel="stylesheet" href="./css/Reset.css">
+    <link rel="stylesheet" href="./css/Body.css">
+    <link rel="stylesheet" href="./css/Mobile.css">
+</head>
+
+<body onload="loading()">
+    <div class="load"> 
+       <div class="ring"></div>
+       <div class="ring"></div>
+       <div class="ring"></div>
+   </div>
+
+   <!--Body-->
+   <div class="loandig">
+        <!--Cabeçario-->
+        <header id="header">
+            <section class="container_header" id="container">
+            <div class="sessao_menu">
+                <nav class="menu_primario">
+                    <a class="header_tema" href="./Index.html"><strong class="header_tema">Arthur Guilherme </strong></a>
+                    <input type="checkbox" name="" id="check">
+                    <label for="check" class="btnmenu">
+                        <i id="btnmenu" class='bx bx-menu'></i>
+                    </label>
+                    <ul class="links">
+                        <li class="nav">
+                            <a href="./index.html">
+                                <strong class="header_titulo">Home</strong>
+                            </a>
+                        </li>
+                        <li class="nav_drop">
+                            <a><strong id="Projetos" class="header_titulo">Projetos +</strong></a>
+                            <ul class="links01">
+                                <li class="nav01">
+                                    <a class="drop">
+                                        <strong class="header_titulo">Cards</strong>
+                                    </a>
+                                </li>
+                                <li class="nav01">
+                                    <a class="drop">
+                                        <strong class="header_titulo">Formulários</strong>
+                                    </a>
+                                </li>
+                                <li class="nav01">
+                                    <a class="drop">
+                                        <strong class="header_titulo">Site Parrallax</strong>
+                                    </a>
+                                </li>
+                                <li class="nav01">
+                                    <a class="drop">
+                                        <strong class="header_titulo">Landing Page</strong>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav">
+                            <a href="https://drive.google.com/file/d/1bGPcciUSY8oGeDTMu15KipSXnaZMxSur/view?usp=share_link" target="_blank">
+                                <strong class="header_titulo">Currículo</strong>
+                            </a>
+                        </li>
+                        <li class="nav">
+                            <a href="#" target="_blank">
+                                <strong class="header_titulo" id="blog">Mine Blog</strong>
+                            </a>
+                        </li>
+                        <li class="nav">
+                            <a href="https://api.whatsapp.com/send?phone=5519988416960" target="_blank">
+                                <strong class="header_titulo">Contato</strong>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            </section>
+            <section class="container_principal">
+                <div class="sessao_apresentacao">
+                    <p>Oi! Tudo bem? Sejam bem-vindo, prazer ter você aqui. Sou o Arthur e estou começando minha carreira como um <strong>desenvolvedor full stack júnior</strong> aqui no Brasil!</p>
+                    <br>
+                    <p>Á ideia incial desse portfolio é ser uma <strong>extensão e apresentação do meu currículo</strong> então fiquem à vontade para fazer qualquer tipo de teste.</p>
+                    <br>
+                    <div class="seta">
+                        <i id="seta" class='bx bx-chevrons-down'></i>
+                    </div>
+                    <!--<div class="sessao_mouse">
+                        <div class="mouse">
+                            <div class="style_mouse">
+                                <div class="ponto_mouse">
+                                    <span class="ponta"></span>
+                                </div>
+                            </div>    
+                        </div> 
+                    </div>-->
+                </div>
+                <div class="img">
+                    <div class="loand01"> 
+                        <div class="ring01"></div>
+                        <img src="./img/arthur.png" alt="" class="foto_principal">
+                    </div>
+                    
+                </div>
+            </section>
+        </header>
+        <!--<section class="pages_container">
+            <section class="container_pages">
+                <div class="pages">
+                    <span class="span"><a href="#" target="_blank"><i class='bx bxl-whatsapp'></i></a></span>
+                    <span class="span"><a href="#" target="_blank"><i class='bx bxl-instagram'></i></a></span>
+                    <span class="span"><a href="#" target="_blank"><i class='bx bxl-linkedin'></i></a></span>
+                    <span class="span"><a href="#" target="_blank"><i class='bx bxl-github'></i></a></span>
+                    <span class="span"><a href="#" target="_blank"><i class='bx bxl-tiktok'></i></a></span>
+                </div>
+            </section>
+        </section>-->    
+        <!--Desafios-->
+        <section class="container_experiencia">
+            <div class="experiencia_texto">
+                <h3 class="projeto" id="projeto">Projetos +</h3>
+            </div>
+            <div class="projetos_texto">
+                <div class="sessao_divissao">
+                    <a href="#" target="_blank">    
+                        <i id="servicos" class='bx bx-devices'></i>
+                    </a>    
+                    <h4>Mobile App</h4>
+                </div>
+                <div class="sessao_divissao">
+                    <a href="#" target="_blank"> 
+                        <i id="servicos" class='bx bx-slideshow'></i>
+                    </a>    
+                    <h4>Web Site</h4> 
+                </div>
+                <div class="sessao_divissao">
+                    <a href="#" target="_blank">
+                        <i id="servicos" class='bx bxl-github'></i>
+                    </a>    
+                    <h4>Desafios</h4> 
+                </div>
+            </div>    
+        </section>
+        <!--Blog-->
+        <section class="mini_blog">
+            <div class="tema_mineblog">
+                <h3 class="projeto" id="Mine">Mine Blog</h3>
+            </div>
+            <div class="container_apresentacao">
+                <div class="carrosel">
+                    <div class="sessao_carrosel" id="img_carrosel">
+                        <div id="texto_carrosel">  
+                            <img src="./img/carrossel(01).jpeg" alt="" class="imgs_carrosel">
+                        </div>    
+                        <div id="texto_carrosel">
+                            <img src="./img/carrossel(02).jpeg" alt="" class="imgs_carrosel">
+                        </div>    
+                        <div id="texto_carrosel">
+                            <img src="./img/carrossel.jpeg" alt="" class="imgs_carrosel">
+                        </div>  
+                    </div>
+                </div>
+                <div class="sessao_mine">
+                    <p>Opa! eae, sou Arthur e como vai sua <strong class="_mine">visita no meu portfólio?</strong></p>
+                    <p>Sou um jovem que conseguiu a graduação superior na área de T.i através da <strong class="_mine">universidade Metrocamp em Campinas no interior de São Paulo!</strong> Estou aos poucos me encaixando nela, deixa eu te contar um pouco sobre minhas experiencias. </p>
+                    <p>Conseguir <strong class="_mine">minha primeira oportunidade</strong> no terceiro período da faculdade, <strong class="_mine">sendo ela na Samsung</strong> trabalhando como suporte de software e hardware no Shopping Bandeiras em Campinas. Lá eu fazia tanto atendimento ao público tirando dúvidas de como utilizar as novas tecnologias até o clássico de baixar o driver da impressora nova da loja.</p>
+                    <p>Hoje já finalizado meu curso, estou na minha segunda oportunidade, como estagiário na <a class="mine_link" href="https://www.solaresti.net.br" target="_blank">Solares T.I</a> sendo ela suporte nivel 1 ajudando os clientes com as dificuldade do dia dia e desenvolvendo sistemas com c#, js e SQLserve.</p>
+                </div>    
+            </div>
+        </section>
+        <!--Habilidades | area desejada-->
+        <section class="container_habilidades">
+            <div class="habilidade_tema">
+                <h3 class="projeto">Habilidades | Áreas desejadas</h3>
+            </div>
+            <div class="interesses">
+                <div class="habilidades">
+                    <legend><strong class="legend">Habilidades:</strong></legend>
+                    <div>
+                        <i id="iconees" class='bx bxl-html5'></i>
+                        <i id="iconees" class='bx bxl-css3' ></i>
+                        <i id="iconees" class='bx bxl-javascript'></i>
+                    </div>
+                    <div>
+                        <svg id="iconees" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50" style=" fill:#000000;">
+                            <path d="M 25 2 C 24.285156 2 23.570313 2.179688 22.933594 2.539063 L 6.089844 12.003906 C 4.800781 12.726563 4 14.082031 4 15.535156 L 4 34.464844 C 4 35.917969 4.800781 37.273438 6.089844 37.996094 L 22.933594 47.460938 C 23.570313 47.820313 24.285156 48 25 48 C 25.714844 48 26.429688 47.820313 27.066406 47.460938 L 43.910156 38 C 45.199219 37.273438 46 35.917969 46 34.464844 L 46 15.535156 C 46 14.082031 45.199219 12.726563 43.910156 12.003906 L 27.066406 2.539063 C 26.429688 2.179688 25.714844 2 25 2 Z M 25 13 C 28.78125 13 32.277344 14.753906 34.542969 17.738281 L 30.160156 20.277344 C 28.84375 18.835938 26.972656 18 25 18 C 21.140625 18 18 21.140625 18 25 C 18 28.859375 21.140625 32 25 32 C 26.972656 32 28.84375 31.164063 30.160156 29.722656 L 34.542969 32.261719 C 32.277344 35.246094 28.78125 37 25 37 C 18.382813 37 13 31.617188 13 25 C 13 18.382813 18.382813 13 25 13 Z M 35 20 L 37 20 L 37 22 L 39 22 L 39 20 L 41 20 L 41 22 L 43 22 L 43 24 L 41 24 L 41 26 L 43 26 L 43 28 L 41 28 L 41 30 L 39 30 L 39 28 L 37 28 L 37 30 L 35 30 L 35 28 L 33 28 L 33 26 L 35 26 L 35 24 L 33 24 L 33 22 L 35 22 Z M 37 24 L 37 26 L 39 26 L 39 24 Z"></path>
+                        </svg>
+                        <i id="iconees" class='bx bxl-postgresql'></i>
+                    </div>
+                </div>
+                <div class="habilidades">
+                    <legend><strong class="legend">Meus interesses de trabalho:</strong></legend>
+                    <div class="linha">
+                        <p class="leg">Desenvolvedor Full Stack</p>
+                        <p class="leg">Suporte</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container_fotter">
+                <div class="finalizao">
+                    <h5>@ 2023 - Arthur Guilherme</h5>
+                    <div class="redes_sociais">
+                        <a href="https://api.whatsapp.com/send?phone=5519988416960" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                        <a href="https://www.instagram.com/rei_arthur.png/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://github.com/ArthurrGuilherme" target="_blank"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.linkedin.com/in/arthur-guilherme-ribeiro-8b3944235/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>    
+</body>
+
+<!--Linguagens-->
+<script src="./js/main.js"></script>
+</html>
