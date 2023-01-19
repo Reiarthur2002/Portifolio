@@ -1,0 +1,356 @@
+/*Header*/
+.menu_primario {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+}
+.header_tema {
+    font-size: 2rem;
+    background: linear-gradient(224deg, #000, #ffd700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    transition: all 1s ease;
+}
+#Projetos {
+    padding-bottom: 40px;
+}
+
+.links, .links_secundario {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+}
+.nav_drop {
+    display: flex;
+    align-items: center;
+}
+#mobile {
+    display: none;
+}
+
+/*Drop*/
+.links01 {
+    display: none;
+    position: absolute;
+    top: 25px;
+}
+.nav01 {
+    padding-bottom: 0.5rem;
+}
+#btnmenu {
+    font-size: 1.5rem;
+    float: right;
+    display: none;
+    color: rgb(0, 0, 0);
+}
+#check {
+    display: none;
+}
+
+/*Efeitos*/
+.nav_drop:hover .links01 {
+    display: block;
+}
+.header_titulo:hover{
+    background: linear-gradient(45deg, #000, #ffd700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+.header_tema:hover {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+/*conteiner_principal*/
+.img {
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+}
+.container_principal {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 8rem;
+}
+.ring01 {
+    width: 288px;
+    height: 290px;
+    border: 0px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+}
+.ring01:nth-child(1){
+    border-bottom-width: 8px;
+    border-color: #ffc400;
+    animation: rotate 5s linear infinite;
+}
+.foto_principal {
+    width: 275px;
+    border-radius: 50%;
+    border: 0.5rem solid #fff;
+}
+.sessao_apresentacao  {
+    width: 380px;
+    text-align: center;
+    height: 178px;
+}
+#seta {
+    font-size: 3rem;
+    position: relative;
+    animation: seta 1.2s infinite;
+    cursor: pointer;
+}
+
+/*@keyframes*/
+@keyframes seta {
+    from {top: 0px;}
+    to {top: 30px;}
+  }
+/*Mouse*/
+/*.mouse {
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.style_mouse {
+    width: 25px;
+    height: 45px;
+    border: 1.5px solid #000;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.ponto_mouse  {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ponta {
+    border: 2px solid #000000;
+    border-radius: 50%;
+    position: relative;
+    animation: ponta 0.5s infinite;
+}*/
+
+/*@keframes*/
+/*@keyframes ponta {
+    from {top: 0px;}
+    to {top: 1px;}
+}*/
+@keyframes rotate{
+    0% {
+        transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(0deg) rotateY(180deg) rotateZ(360deg);
+    }
+}
+
+/*Efeitos*/
+.img:hover {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+/*Container_pages
+
+.pages {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    padding-left: 10px;
+}
+.span {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.bx {
+    font-size: 1rem;
+    color: #ffd700;
+}
+Efeitos
+.span:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}*/
+
+/*projetos*/
+.experiencia_texto {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+.projetos_texto {
+    display: flex;
+    justify-content: space-evenly;
+    height: 150px;
+    align-items: center;
+}
+#servicos {
+    font-size: 4rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.sessao_divissao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/*Efeitos*/
+#servicos:hover{
+    background: linear-gradient(224deg, #000, #ffd700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+.btn {
+    width: 41px;
+    height: 16px;
+    background: rgb(2 2 2);
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ffc400;
+}
+
+/*Blog*/
+.mini_blog {
+    height: 430px;
+    padding: 0px 5rem;
+    background: rgb(201 201 201 / 32%);
+}
+.tema_mineblog  {
+    height: 100px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.container_carrosel {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.carrosel {
+    border: 5px solid #fff;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 228px;
+    height: 228px;
+    cursor: pointer;
+    transition: all 1s;
+}
+.sessao_carrosel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+.imgs_carrosel {
+    border-radius: 15px;
+    width: 228px;
+    height: 228px;
+}
+.container_apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sessao_mine{
+    width: 408px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    font-size: 0.9rem;
+}
+._mine {
+    font-size: 0.9rem;
+}
+.mine_link {
+    color: rgb(0, 47, 255);
+    text-decoration: revert;
+}
+
+/*Efeitos*/
+.carrosel:hover {
+    border-radius: 50%;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+/*Habilidades | areas desejadas*/
+.container_habilidades {
+    height: 220px;
+    padding: 0px 5rem;
+}
+.habilidade_tema {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+.interesses {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+#iconees {
+    fill: #000000;
+    width: 28px;
+    cursor: pointer;
+}
+.habilidades  {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.8rem;
+}
+.legend {
+    font-size: 1.2rem;
+}
+.leg {
+    font-size: 1rem;
+}
+.linha {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/*Footer*/
+
+.finalizao {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(201 201 201 / 32%);
+}
+.redes_sociais {
+    font-size: 1.1rem;
+}
